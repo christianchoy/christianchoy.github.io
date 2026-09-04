@@ -1142,189 +1142,345 @@ footer h2 {
 
 }
 
-/* =========================
+/* ========================================
    ABOUT PAGE
-========================= */
+======================================== */
+
+
+/* ---------- HERO ---------- */
 
 .about-hero {
     max-width: 1400px;
+    min-height: 80vh;
     margin: auto;
-    padding: 120px 5% 100px;
+    padding: 120px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.about-hero > p {
+.about-eyebrow {
+    font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 13px;
     margin-bottom: 35px;
+    color: #666;
 }
 
 .about-hero h1 {
-    max-width: 1100px;
+    max-width: 1150px;
     font-size: clamp(55px, 8vw, 115px);
-    line-height: 0.95;
+    line-height: 0.94;
     letter-spacing: -5px;
     font-weight: 500;
 }
 
-
-/* MAIN INTRODUCTION */
-
-.about-intro {
-    max-width: 1400px;
-    margin: auto;
-    padding: 120px 5%;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 60px;
-    border-top: 1px solid #d5d5d5;
+.about-hero-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+    margin-top: 70px;
+    padding-top: 25px;
+    border-top: 1px solid #ccc;
 }
 
-.about-intro-label {
-    font-size: 13px;
-    color: #777;
-}
-
-.about-intro-content h2 {
-    max-width: 950px;
-    font-size: clamp(36px, 5vw, 65px);
-    line-height: 1.08;
-    letter-spacing: -2px;
-    font-weight: 500;
-}
-
-.about-intro-content p {
-    max-width: 700px;
-    margin-top: 35px;
+.about-hero-bottom p {
+    max-width: 600px;
     font-size: 18px;
     color: #555;
 }
 
-
-/* DETAILS / INFORMATION */
-
-.about-details {
-    max-width: 1400px;
-    margin: auto;
-    padding: 120px 5%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    border-top: 1px solid #d5d5d5;
-}
-
-.about-detail {
-    border-top: 1px solid #aaa;
-    padding-top: 20px;
-}
-
-.about-detail span {
-    display: block;
-    margin-bottom: 20px;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+.about-scroll {
+    font-size: 13px;
     color: #777;
 }
 
-.about-detail h3 {
-    margin-bottom: 15px;
-    font-size: 24px;
-    font-weight: 500;
-}
 
-.about-detail p {
-    font-size: 16px;
-    color: #555;
-}
+/* ---------- INTRODUCTION ---------- */
 
-
-/* SKILLS SECTION */
-
-.skills-section {
+.about-story {
     max-width: 1400px;
     margin: auto;
     padding: 140px 5%;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: 60px;
+    gap: 70px;
     border-top: 1px solid #d5d5d5;
 }
 
-.skills-label {
+.about-section-number {
     font-size: 13px;
     color: #777;
 }
 
-.skills-content h2 {
-    font-size: clamp(40px, 5vw, 65px);
+.about-story-content h2 {
+    max-width: 1000px;
+    font-size: clamp(40px, 5vw, 70px);
+    line-height: 1.05;
+    letter-spacing: -2.5px;
     font-weight: 500;
-    letter-spacing: -2px;
-    margin-bottom: 60px;
 }
 
-.skills-grid {
+.about-story-text {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px 30px;
+    gap: 50px;
+    margin-top: 70px;
 }
 
-.skill-group {
-    border-top: 1px solid #aaa;
-    padding-top: 20px;
-}
-
-.skill-group h3 {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.skill-group p {
-    max-width: 500px;
-    font-size: 16px;
-    line-height: 1.8;
+.about-story-text p {
+    font-size: 18px;
+    line-height: 1.75;
     color: #555;
 }
 
 
-/* INTERESTS */
+/* ---------- DARK ENGINEERING SECTION ---------- */
 
-.interests-section {
+.about-focus {
+    background: #171717;
+    color: #f7f7f4;
+    padding: 150px 5%;
+}
+
+.about-focus-inner {
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 70px;
+}
+
+.about-focus .about-section-number {
+    color: #888;
+}
+
+.about-focus-content > p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.about-focus-content h2 {
+    max-width: 1000px;
+    font-size: clamp(45px, 6vw, 85px);
+    line-height: 1;
+    letter-spacing: -3px;
+    font-weight: 500;
+}
+
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 90px;
+    border-top: 1px solid #444;
+}
+
+.focus-item {
+    padding: 30px 30px 30px 0;
+    border-right: 1px solid #444;
+}
+
+.focus-item:last-child {
+    border-right: none;
+    padding-left: 30px;
+}
+
+.focus-item:nth-child(2) {
+    padding-left: 30px;
+}
+
+.focus-item span {
+    display: block;
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.focus-item h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.focus-item p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #aaa;
+}
+
+
+/* ---------- SKILLS ---------- */
+
+.about-skills {
+    max-width: 1400px;
+    margin: auto;
+    padding: 150px 5%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 70px;
+}
+
+.about-skills-content > p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: #777;
+}
+
+.about-skills-content > h2 {
+    margin-top: 30px;
+    max-width: 900px;
+    font-size: clamp(40px, 5vw, 70px);
+    line-height: 1.05;
+    letter-spacing: -2.5px;
+    font-weight: 500;
+}
+
+.about-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    margin-top: 80px;
+    border-top: 1px solid #ccc;
+}
+
+.about-skill-card {
+    min-height: 240px;
+    padding: 30px 35px 40px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.about-skill-card:nth-child(even) {
+    padding-left: 35px;
+    border-left: 1px solid #ccc;
+}
+
+.about-skill-card span {
+    display: block;
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 45px;
+}
+
+.about-skill-card h3 {
+    font-size: 27px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.about-skill-card p {
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.about-skill-card {
+    transition: transform 0.3s ease;
+}
+
+.about-skill-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ---------- EDUCATION / DETAILS ---------- */
+
+.about-details {
     max-width: 1400px;
     margin: auto;
     padding: 140px 5%;
     border-top: 1px solid #d5d5d5;
 }
 
-.interests-section > p {
-    margin-bottom: 30px;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #777;
+.about-details-heading {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 70px;
 }
 
-.interests-section h2 {
-    max-width: 1000px;
-    font-size: clamp(38px, 5vw, 70px);
+.about-details-heading h2 {
+    max-width: 900px;
+    font-size: clamp(40px, 5vw, 70px);
     line-height: 1.05;
     letter-spacing: -2px;
     font-weight: 500;
 }
 
-.interests-section .interests-text {
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 80px;
+    border-top: 1px solid #ccc;
+}
+
+.detail-card {
+    padding: 30px 30px 30px 0;
+}
+
+.detail-card + .detail-card {
+    padding-left: 30px;
+    border-left: 1px solid #ccc;
+}
+
+.detail-card span {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.detail-card h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.detail-card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+
+/* ---------- PERSONAL INTEREST / CAREER DIRECTION ---------- */
+
+.about-direction {
+    max-width: 1400px;
+    margin: auto;
+    padding: 150px 5%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 70px;
+    border-top: 1px solid #d5d5d5;
+}
+
+.about-direction-content h2 {
+    max-width: 1000px;
+    font-size: clamp(40px, 5vw, 70px);
+    line-height: 1.05;
+    letter-spacing: -2.5px;
+    font-weight: 500;
+}
+
+.about-direction-content p {
     max-width: 700px;
-    margin-top: 40px;
+    margin-top: 45px;
     font-size: 18px;
+    line-height: 1.8;
     color: #555;
 }
 
 
-/* ABOUT CALL TO ACTION */
+/* ---------- CTA ---------- */
 
 .about-cta {
-    padding: 140px 5%;
+    padding: 150px 5%;
     background: #171717;
     color: #f7f7f4;
 }
@@ -1334,17 +1490,17 @@ footer h2 {
     margin: auto;
 }
 
-.about-cta p {
+.about-cta-label {
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #999;
+    color: #888;
 }
 
 .about-cta h2 {
-    max-width: 1100px;
-    margin: 35px 0 60px;
-    font-size: clamp(50px, 8vw, 110px);
+    max-width: 1150px;
+    margin: 40px 0 80px;
+    font-size: clamp(55px, 8vw, 115px);
     line-height: 0.95;
     letter-spacing: -4px;
     font-weight: 500;
@@ -1352,55 +1508,108 @@ footer h2 {
 
 .about-cta-links {
     display: flex;
-    gap: 30px;
+    gap: 35px;
 }
 
 .about-cta-links a {
+    padding-bottom: 6px;
     border-bottom: 1px solid #f7f7f4;
-    padding-bottom: 5px;
 }
 
 
-/* MOBILE ABOUT PAGE */
+/* ========================================
+   ABOUT PAGE MOBILE
+======================================== */
 
 @media (max-width: 768px) {
 
     .about-hero {
-        padding: 80px 6% 70px;
+        min-height: auto;
+        padding: 90px 6% 100px;
     }
 
     .about-hero h1 {
-        font-size: 55px;
+        font-size: 52px;
         letter-spacing: -3px;
     }
 
-    .about-intro {
+    .about-hero-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 50px;
+    }
+
+    .about-story,
+    .about-focus-inner,
+    .about-skills,
+    .about-direction {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 35px;
+    }
+
+    .about-story {
         padding: 90px 6%;
     }
 
-    .about-intro-content h2 {
-        font-size: 40px;
+    .about-story-text {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 45px;
+    }
+
+    .about-focus {
+        padding: 100px 6%;
+    }
+
+    .focus-grid {
+        grid-template-columns: 1fr;
+        margin-top: 60px;
+    }
+
+    .focus-item,
+    .focus-item:nth-child(2),
+    .focus-item:last-child {
+        padding: 30px 0;
+        border-right: none;
+        border-bottom: 1px solid #444;
+    }
+
+    .about-skills {
+        padding: 100px 6%;
+    }
+
+    .about-skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-skill-card,
+    .about-skill-card:nth-child(even) {
+        padding: 30px 0;
+        border-left: none;
     }
 
     .about-details {
-        grid-template-columns: 1fr;
-        padding: 90px 6%;
+        padding: 100px 6%;
     }
 
-    .skills-section {
+    .about-details-heading {
         grid-template-columns: 1fr;
         gap: 30px;
-        padding: 90px 6%;
     }
 
-    .skills-grid {
+    .details-grid {
         grid-template-columns: 1fr;
     }
 
-    .interests-section {
-        padding: 90px 6%;
+    .detail-card,
+    .detail-card + .detail-card {
+        padding: 30px 0;
+        border-left: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .about-direction {
+        padding: 100px 6%;
     }
 
     .about-cta {
