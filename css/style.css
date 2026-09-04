@@ -1141,3 +1141,279 @@ footer h2 {
     font-size: 15px;
 
 }
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-hero {
+    max-width: 1400px;
+    margin: auto;
+    padding: 120px 5% 100px;
+}
+
+.about-hero > p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-bottom: 35px;
+}
+
+.about-hero h1 {
+    max-width: 1100px;
+    font-size: clamp(55px, 8vw, 115px);
+    line-height: 0.95;
+    letter-spacing: -5px;
+    font-weight: 500;
+}
+
+
+/* MAIN INTRODUCTION */
+
+.about-intro {
+    max-width: 1400px;
+    margin: auto;
+    padding: 120px 5%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 60px;
+    border-top: 1px solid #d5d5d5;
+}
+
+.about-intro-label {
+    font-size: 13px;
+    color: #777;
+}
+
+.about-intro-content h2 {
+    max-width: 950px;
+    font-size: clamp(36px, 5vw, 65px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+    font-weight: 500;
+}
+
+.about-intro-content p {
+    max-width: 700px;
+    margin-top: 35px;
+    font-size: 18px;
+    color: #555;
+}
+
+
+/* DETAILS / INFORMATION */
+
+.about-details {
+    max-width: 1400px;
+    margin: auto;
+    padding: 120px 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    border-top: 1px solid #d5d5d5;
+}
+
+.about-detail {
+    border-top: 1px solid #aaa;
+    padding-top: 20px;
+}
+
+.about-detail span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #777;
+}
+
+.about-detail h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.about-detail p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* SKILLS SECTION */
+
+.skills-section {
+    max-width: 1400px;
+    margin: auto;
+    padding: 140px 5%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 60px;
+    border-top: 1px solid #d5d5d5;
+}
+
+.skills-label {
+    font-size: 13px;
+    color: #777;
+}
+
+.skills-content h2 {
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: 500;
+    letter-spacing: -2px;
+    margin-bottom: 60px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 30px;
+}
+
+.skill-group {
+    border-top: 1px solid #aaa;
+    padding-top: 20px;
+}
+
+.skill-group h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.skill-group p {
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
+
+
+/* INTERESTS */
+
+.interests-section {
+    max-width: 1400px;
+    margin: auto;
+    padding: 140px 5%;
+    border-top: 1px solid #d5d5d5;
+}
+
+.interests-section > p {
+    margin-bottom: 30px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+.interests-section h2 {
+    max-width: 1000px;
+    font-size: clamp(38px, 5vw, 70px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    font-weight: 500;
+}
+
+.interests-section .interests-text {
+    max-width: 700px;
+    margin-top: 40px;
+    font-size: 18px;
+    color: #555;
+}
+
+
+/* ABOUT CALL TO ACTION */
+
+.about-cta {
+    padding: 140px 5%;
+    background: #171717;
+    color: #f7f7f4;
+}
+
+.about-cta-inner {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.about-cta p {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+.about-cta h2 {
+    max-width: 1100px;
+    margin: 35px 0 60px;
+    font-size: clamp(50px, 8vw, 110px);
+    line-height: 0.95;
+    letter-spacing: -4px;
+    font-weight: 500;
+}
+
+.about-cta-links {
+    display: flex;
+    gap: 30px;
+}
+
+.about-cta-links a {
+    border-bottom: 1px solid #f7f7f4;
+    padding-bottom: 5px;
+}
+
+
+/* MOBILE ABOUT PAGE */
+
+@media (max-width: 768px) {
+
+    .about-hero {
+        padding: 80px 6% 70px;
+    }
+
+    .about-hero h1 {
+        font-size: 55px;
+        letter-spacing: -3px;
+    }
+
+    .about-intro {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 90px 6%;
+    }
+
+    .about-intro-content h2 {
+        font-size: 40px;
+    }
+
+    .about-details {
+        grid-template-columns: 1fr;
+        padding: 90px 6%;
+    }
+
+    .skills-section {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 90px 6%;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .interests-section {
+        padding: 90px 6%;
+    }
+
+    .about-cta {
+        padding: 100px 6%;
+    }
+
+    .about-cta h2 {
+        letter-spacing: -3px;
+    }
+
+    .about-cta-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
